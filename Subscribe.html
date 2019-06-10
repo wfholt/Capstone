@@ -23,29 +23,61 @@
         <div class="text-center text-md-right">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
-              <a class="btn-floating btn-lg rgba-white-slight mx-1">
+              <a class="btn-floating btn-lg text-white mx-1">
                 <i class="fab fa-facebook-f" onclick="location.href='https://www.facebook.com/pages/category/Arts---Entertainment/Lovenoise-31699319631/';"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-floating btn-lg rgba-white-slight mx-1">
+              <a class="btn-floating btn-lg text-white mx-1">
                 <i class="fab fa-twitter" onclick="location.href='https://twitter.com/lovenoise?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor';"></i></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-floating btn-lg rgba-white-slight mx-1">
+              <a class="btn-floating btn-lg text-white mx-1">
                 <i class="fab fa-instagram" onclick="location.href='https://www.instagram.com/lovenoise2020/?hl=en';"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-floating btn-lg rgba-white-slight mx-1">
+              <a class="btn-floating btn-lg text-white mx-1">
                 <i class="fab fa-linkedin-in" onclick="location.href='https://www.linkedin.com/in/ericholtjd/';"></i>
               </a>
             </li>
           </ul>
         </div>
   </header>
+ 
+<!-- Nav bar -->
   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Lovenoise</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="LovenoiseBlog.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MPC.html">Tech</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Atlanta.html">TV</a>
+          <a class="dropdown-item" href="Eskridge.html">Spotlight</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Subscribe.html">Subscribe</a>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+      <button class="btn btn-outline-black-50 my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> 
   
     <div class="container">
 	  <div class="row">
@@ -59,7 +91,7 @@
 		</figure>
 	
 		
-	<p class="lead text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	<p class="lead text-align:left"> You are now locked in to receive the latest updates on the urban music scene and culture of Music City.  You'll be the first to know about upcoming concerts, live events and more!  Don't just make noise, LOVENOISE.</p>
 
 
 
@@ -73,7 +105,7 @@
 		<img class="img-fluid" src="images/about_us1.png" alt="About Us">
 		</figure>
 		<br/>
-		<p class="lead text-justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+		<p class="lead text-align:left">Music city is growing and changing, but Lovenoise remains a constant on the Nashville scene.  Originally a weekly live music event, the brand has now grown to new heights in live entertainment and media. Lovenoise remains the source for urban events and understanding of the urban entertainment marketplace in Nashville, from their live shows and radio show to their original events across the city. 
 		</p>
 		
 
@@ -88,7 +120,9 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small pt-4" style="background-color: #424242; margin-top:20px; text-color: #ffffff;">
+<footer class="page-footer font-small pt-4" style="background-color: #e5e5e5; margin-top:20px;">
+
+	 <hr>
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
@@ -98,9 +132,22 @@
 
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <img src="images/ln_logo.png" onclick="location.href='Lovenoise.html';">
+        <img src="images/ln_logo.png" style="height:50px;width:150px;"onclick="location.href='LovenoiseBlog.html';" onmouseover="bigBanner(this)" onmouseout="normalBanner(this)">
         <p>Keeping the music in Music City.  All the music.  Don't just make noise.  Love Noise.</p>
       </div>
+	  
+<script>
+function bigBanner(x) {
+  x.style.height = "65px";
+  x.style.width = "165px";
+}
+
+function normalBanner(x) {
+  x.style.height = "50px";
+  x.style.width = "150px";
+}
+</script>
+
       <!-- Grid column -->
 
       <hr class="w-100 clearfix d-md-none">
@@ -111,16 +158,16 @@
       <hr class="w-100 clearfix d-md-none">
 
       <!-- Grid column -->
-	  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Recent Posts</h6>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold" >Recent Posts</h6>
         <p>
-          <a href="MPC.html">Classic Drum Machines - ASR-X Pro</a>
+          <a href="ASR.html" style="color:#000;">Classic Drum Machines - ASR-X Pro</a>
         </p>
         <p>
-          <a href="Vinyl.html">Vinyl Makes a Comeback</a>
+          <a href="Vinyl.html" style="color:#000;">Vinyl Makes a Comeback</a>
         </p>
         <p>
-          <a href="Atlanta.html">FX's Atlanta - Best Soundtrack on TV</a>
+          <a href="Atlanta.html" style="color:#000;">FX's Atlanta - Best Soundtrack on TV</a>
         </p>
       </div>
 
@@ -153,7 +200,7 @@
       <div class="col-md-7 col-lg-8">
 
         <!--Copyright-->
-        <p class="text-center text-md-left">© 2019
+        <p class="text-center ">© 2019
             <strong> LOVENOISE.COM</strong>
         </p>
 
@@ -199,7 +246,7 @@
         <form class="form-inline">
           <input class="form-control form-control-sm mr-3 w-125" type="text" placeholder="Search"
             aria-label="Search">
-          <i class="fab fa-search" aria-hidden="true"></i>
+ 
         </form>
         <!-- Form -->
 
@@ -224,6 +271,7 @@
 
 </footer>
 <!-- Footer -->
+
 
 
 	
